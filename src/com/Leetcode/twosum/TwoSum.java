@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class TwoSum {
     //beginIndex表示二分后的数组[0]在原数组中的位置
     public static int[] towsum(int num,int []nums,int target,int beginIndex){
+        int[] result;
         if(nums.length == 0){
             return new int[]{};
         }else {
@@ -12,12 +13,12 @@ public class TwoSum {
             if (num + nums[half] == target) {
                 return new int[]{num, beginIndex + half};
             } else if (num + nums[half] > target) {
-                towsum(num, Arrays.copyOfRange(nums, 0, half), target, beginIndex);
+                result = towsum(num, Arrays.copyOfRange(nums, 0, half), target, beginIndex);
             } else {
-                towsum(num, Arrays.copyOfRange(nums, half + 1, nums.length), target, beginIndex + half + 1);
+                result = towsum(num, Arrays.copyOfRange(nums, half + 1, nums.length), target, beginIndex + half + 1);
             }
         }
-        return new int[]{};
+        return result;
     }
     public static int[] towsum(int[] nums,int target){
         Arrays.sort(nums);
@@ -36,6 +37,6 @@ public class TwoSum {
         return new int[]{};
     }
     public static void main(String args[]){
-        System.out.println(Arrays.toString(towsum(new int[]{1,2,3,4,5,6},9)));
+        System.out.println(Arrays.toString(towsum(new int[]{1,2,3,4,5,6},4)));
     }
 }
