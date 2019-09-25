@@ -1,4 +1,4 @@
-package com.Leetcode.reverse;
+package com.Leetcode.easy.reverse;
 
 public class Reverse {
     private String reverse(String str){

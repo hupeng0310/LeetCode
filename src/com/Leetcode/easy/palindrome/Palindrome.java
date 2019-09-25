@@ -1,6 +1,4 @@
-package com.Leetcode.palindrome;
-
-import java.util.Arrays;
+package com.Leetcode.easy.palindrome;
 
 public class Palindrome {
     public int[] getArray(int x){
