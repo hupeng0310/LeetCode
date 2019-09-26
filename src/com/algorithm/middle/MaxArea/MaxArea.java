@@ -1,4 +1,4 @@
-package com.Leetcode.middle.MaxArea;
+package com.algorithm.middle.MaxArea;
 
 public class MaxArea {
     public int maxArea(int []height){

@@ -1,4 +1,4 @@
-package com.Leetcode.easy.valid;
+package com.algorithm.easy.valid;
 
 import java.util.Stack;
 

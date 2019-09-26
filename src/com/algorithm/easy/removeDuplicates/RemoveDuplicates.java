@@ -1,9 +1,7 @@
-package com.Leetcode.easy.removeDuplicates;
+package com.algorithm.easy.removeDuplicates;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Set;
 
 public class RemoveDuplicates {
     public int removeDuplicates(int[] nums){
@@ -20,7 +18,7 @@ public class RemoveDuplicates {
         return set.size();
     }
     public static void main(String[] args){
-        int[] nums = new int[]{-3,-1,0,0,0,3,3};
+        int[] nums = new int[]{-3,-1,0,0,0,3,3,0,0};
         System.out.println(new RemoveDuplicates().removeDuplicates(nums));
         System.out.println(Arrays.toString(nums));
     }
