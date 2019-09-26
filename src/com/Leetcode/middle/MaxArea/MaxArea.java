@@ -1,4 +1,4 @@
-package com.Leetcode.middle;
+package com.Leetcode.middle.MaxArea;
 
 public class MaxArea {
     public int maxArea(int []height){
@@ -14,7 +14,7 @@ public class MaxArea {
         }
         return maxArea;
     }
-    public static void main(String args[]){
+    public static void main(String[] args){
         System.out.println(new MaxArea().maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
     }
 }
