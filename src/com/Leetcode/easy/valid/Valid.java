@@ -1,6 +1,5 @@
-package com.Leetcode.easy.Valid;
+package com.Leetcode.easy.valid;
 
-import java.util.HashMap;
 import java.util.Stack;
 
 public class Valid {
