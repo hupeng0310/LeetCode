@@ -17,7 +17,6 @@ public class AddTwoNumber {
             l2.next = new ListNode(0);
             l0.next = addTwoNumbers(l1.next,l2.next);
         }
-
         while (carry != null){
             if(carry.val >9){
                 if(carry.next == null){
@@ -28,7 +27,6 @@ public class AddTwoNumber {
             }
             carry = carry.next;
         }
-
         return copy;
     }
     public static void main(String[] args){
